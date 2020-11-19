@@ -17,7 +17,7 @@ class Symbol extends Widget
     public function registerAssets()
     {
         $view = $this->getView();
-        NaviAsset::register($view);
+        SymbolAsset::register($view);
 
         $this->registerPlugin($this->pluginName, $this->id);
     }
