@@ -6,8 +6,6 @@ use kilyakus\widgets\Widget;
 
 class Symbol extends Widget
 {
-    public $pluginName = 'symbol';
-
     public function run()
     {
         $this->initSettings();
@@ -18,8 +16,6 @@ class Symbol extends Widget
     {
         $view = $this->getView();
         SymbolAsset::register($view);
-
-        $this->registerPlugin($this->pluginName, $this->id);
     }
 
     protected function initSettings()
